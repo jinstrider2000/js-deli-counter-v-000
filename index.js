@@ -9,5 +9,5 @@ function currentLine(deliLine) {
 
 function nowServing(deliLine) {
   var name = deliLine.shift()
-  return `Currently serving ${name}`
+  return `Currently serving ${name}.`
 }
