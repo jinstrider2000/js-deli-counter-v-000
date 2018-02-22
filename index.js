@@ -4,7 +4,15 @@ function takeANumber(deliLine, name) {
 }
 
 function currentLine(deliLine) {
-
+  if (deliLine.length == 0) {
+    return "The line is currently empty."
+  } else {
+    var line = `The line is currently: 1. ${deliLine[0]}`
+    for (var i = 2; i <= deliLine.length; i++) {
+      line = line + ` , ${i}. ${deliLine[i-1]}` 
+    }
+    return line
+  }
 }
 
 function nowServing(deliLine) {
